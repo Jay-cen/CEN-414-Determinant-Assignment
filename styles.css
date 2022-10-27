@@ -1,0 +1,26 @@
+body {
+  padding: 40px 80px;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  background-color: bisque;
+}
+div.matrix {
+  display: grid;
+  width: 120px;
+  grid-template-columns: auto auto;
+  text-align: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.Element1 {
+  padding: 3px;
+}
+.Element2 {
+  padding: 3px;
+}
+.Element3 {
+  padding: 3px;
+}
+.Element4 {
+  padding: 3px;
+}

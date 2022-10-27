@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Determinant of a 2x2 Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Code To Compute The Determinant Of A 2x2 Matrix
+    Using The Last 4 Digits Of A Student's Matric Number As The Matrix Elements-->
+</head>
+
+<body>
+    <p><b>My Matric Number:19CJ025762</b></p>
+    <hr>
+    <br>
+    <div class="matrix">
+        <span class="Element1">5</span>
+        <span class="Element2">7</span>
+        <span class="Element3">6</span>
+        <span class="Element4">2</span>
+    </div>
+    <p id="result">
+    </p>
+    <footer>
+        <script>
+            let matElements1 = document.getElementsByClassName("Element1")
+            let matElements2 = document.getElementsByClassName("Element2")
+            let matElements3 = document.getElementsByClassName("Element3")
+            let matElements4 = document.getElementsByClassName("Element4")
+            let myMatrix = [
+                [parseInt(matElements1[0].textContent), parseInt(matElements2[0].textContent)],
+                [parseInt(matElements3[0].textContent), parseInt(matElements4[0].textContent)],
+            ];
+            console.log(myMatrix[0][0]);
+            let det = myMatrix[0][0] * myMatrix[1][1] - myMatrix[0][1] * myMatrix[1][0];
+            console.log(det);
+            document.getElementById("result").textContent = `= ${det}`
+        </script>
+    </footer>
+</body>
+
+</html>
